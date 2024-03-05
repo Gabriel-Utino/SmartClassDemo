@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+#sidebar {
+  width: 0;
+  height: 100%;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#sidebar li {
+  margin-bottom: 10px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+#sidebar-toggle {
+  font-size: 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 600px) {
+  header h1 {
+      font-size: 1.5em;
+  }
+}
